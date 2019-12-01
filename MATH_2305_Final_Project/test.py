@@ -29,6 +29,11 @@ print(f'The edge with minimum cost is {minedge}, with a cost of {cost(G, minedge
 #print edge with minimum cost
 
 T = add_new_edge(G, T)
+
+# holds the return value of function check_tree (either 1 or 0)
+
+check = check_tree(G, T)
+
 print('')
 print(f'the new tree is: T = { T }')
 

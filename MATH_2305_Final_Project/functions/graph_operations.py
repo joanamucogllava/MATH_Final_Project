@@ -40,5 +40,14 @@ def add_new_edge(G, T):
         
      return T
    
+# checks tree to see if it's path has been completed
+def check_tree(G, T):
     
+    g_len = len(G[0])
+    t_len = len(T[0])
+    
+    if g_len == t_len:
+        return 1
+    else:
+        return 0    
   
