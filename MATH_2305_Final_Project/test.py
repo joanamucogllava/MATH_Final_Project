@@ -1,5 +1,5 @@
 from functions.reading_writing_functions import get_graph
-from functions.graph_operations import incident_edges, cost, min_cost_incident_edge, add_new_edge
+from functions.graph_operations import incident_edges, cost, min_cost_incident_edge, add_new_edge, check_tree
 
 
 G = get_graph('G1.txt')
@@ -30,10 +30,15 @@ print(f'The edge with minimum cost is {minedge}, with a cost of {cost(G, minedge
 
 T = add_new_edge(G, T)
 
+print('')
+print(f'the new tree is: T = { T }')
+
 # holds the return value of function check_tree (either 1 or 0)
 
 check = check_tree(G, T)
 
-print('')
-print(f'the new tree is: T = { T }')
+if check == 1:
+    print('Path complete...')
+else:
+    print('Path incomplete...')
 
