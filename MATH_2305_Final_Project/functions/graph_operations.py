@@ -1,5 +1,4 @@
 
-
 def incident_edges(G, T):
         
     edges = []
@@ -29,6 +28,17 @@ def min_cost_incident_edge(G, T):
             returnedge = e  #set return
         
     return returnedge
+
     
+def add_new_edge(G, T):
+     
+     newedge = min_cost_incident_edge(G, T)
+     T[1].append(newedge)
+     for v in newedge: 
+          if v not in T[0]:
+              T[0].append(v)
+        
+     return T
+   
     
-# graph cost returns the total weight of a graph
+  
