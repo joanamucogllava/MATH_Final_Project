@@ -20,7 +20,7 @@ def cost(G, e):
 def min_cost_incident_edge(G, T):
     
     inedges = incident_edges(G, T)  #get incident edges
-    min, returnedge = cost(G, inedges[0]), [] #starting minimum and return edge
+    min, returnedge = cost(G, inedges[0]), inedges[0] #starting minimum and return edge
     for e in inedges:  #loop through incident edges
         edgecost = cost(G, e)
         if edgecost < min:  #if cost is smaller than minimum
