@@ -1,6 +1,6 @@
-from prims_algorithm import prims
+from prims_algorithms import prims
 from functions.graph_operations import tree_cost
-from functions.reading_writting_functions import get_graph
+from functions.reading_writing_functions import get_graph
 
 text = input('Graph data file: ')
 G = get_graph (text)
