@@ -1,8 +1,8 @@
-from algorithms import prims
-from functions.graph_operations import graph_cost
-from fucntions.readin_writing_functions import get_graph
+from prims_algorithm import prims
+from functions.graph_operations import tree_cost
+from functions.reading_writting_functions import get_graph
 
-text = inut('Graph data file: ')
+text = input('Graph data file: ')
 G = get_graph (text)
 
 print('')
@@ -15,4 +15,4 @@ T = prims(G, v)
 print('')
 print(f'Optimal Tree is: T = {T}')
 print('')
-print(f'OPtimal cost: { graph_cost(G,T)}')
+print(f'OPtimal cost: { tree_cost(G,T)}')
