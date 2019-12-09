@@ -1,4 +1,3 @@
-Learn more or give us feedback
 # Prims goes here
 from functions.graph_operations import check_tree, add_new_edge;
     
