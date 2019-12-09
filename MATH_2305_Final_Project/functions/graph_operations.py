@@ -51,8 +51,8 @@ def check_tree(G, T):
     else:
         return 0    
   
-tree_cost(G,T): # finds edgecost of tree
-    tree cost = 0
-	for e in T[1]:
-		treecost += cost(G,e)
-	return treecost
+def tree_cost(G,T): # finds edgecost of tree
+    treecost = 0
+    for e in T[1]:
+        treecost += cost(G,e)
+    return treecost
